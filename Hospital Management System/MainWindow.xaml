@@ -1,0 +1,20 @@
+﻿<Window x:Class="Hospital_Management_System.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Hospital Management System" WindowState="Maximized" WindowStartupLocation="CenterScreen" Height="600" Width="1000">
+    <Window.Background>
+        <ImageBrush ImageSource="image/HMS.jpg"/>
+    </Window.Background>
+    <Grid Background="White">
+        <Label Content="Role :" HorizontalAlignment="Left" Height="30" Margin="662,447,0,0" VerticalAlignment="Top" Width="86" FontSize="14.667"/>
+        <Label x:Name="label" Content="ID" HorizontalAlignment="Left" Margin="708,329,0,0" VerticalAlignment="Top" FontSize="14.667" RenderTransformOrigin="-0.746,0.674"/>
+        <Label x:Name="label1" Content="Password" HorizontalAlignment="Left" Margin="662,386,0,0" VerticalAlignment="Top" FontSize="14.667" RenderTransformOrigin="6.382,3.507"/>
+        <ComboBox Name="combobox" HorizontalAlignment="Left" Height="26" Margin="771,451,0,0" VerticalAlignment="Top" Width="150" FontSize="14.667" RenderTransformOrigin="0.123,0.162"/>
+        <TextBox x:Name="textboxUsername" HorizontalAlignment="Left" Height="26" Margin="771,332,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="150" FontSize="14.667"/>
+        <PasswordBox Name="textboxPassword" HorizontalAlignment="Left" Height="26" Margin="771,389,0,0" VerticalAlignment="Top" Width="150" FontSize="14.667"/>
+        <Button Content="Login" Name="btnLogin" HorizontalAlignment="Left" Height="26" Margin="732,534,0,0" VerticalAlignment="Top" Width="79" Click="btnLogin_Click" RenderTransformOrigin="0.42,-0.885"/>
+        <Image HorizontalAlignment="Left" Height="137" Margin="720,142,0,0" VerticalAlignment="Top" Width="160" Source="image/Hospital Logo.jpg" RenderTransformOrigin="2.026,0.898"/>
+        <TextBlock HorizontalAlignment="Left" Margin="685,90,0,0" TextWrapping="Wrap" Text=" MediCare Hospital" VerticalAlignment="Top" Width="236" Height="30" FontSize="24" FontFamily="Microsoft JhengHei" Foreground="#FF4CA325" FontWeight="Bold"/>
+        <Button Content="Exit" HorizontalAlignment="Left" Margin="866,534,0,0" VerticalAlignment="Top" Width="76" Height="26" Click="Button_Click"/>
+    </Grid>
+</Window>
